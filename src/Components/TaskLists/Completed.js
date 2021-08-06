@@ -9,7 +9,7 @@ const Completed = ({TaskList, DeleteTask}) => {
 
 
     return (
-        <div>
+        <div className="taskList">
             <h2>Completed Tasks</h2>
             
             {completedTasks.map(task => (

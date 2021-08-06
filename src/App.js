@@ -39,15 +39,17 @@ const App = () => {
   }
 
   return (
-    <div>
-      <div>
-        <h1>To Do List</h1>
-        <Upcoming TaskList = {tasks} DeleteTask={deleteTask} StartTask={startTask}/>
-        <InProgress TaskList = {tasks} DeleteTask={deleteTask} FinishTask = {finishTask}/>
-        <Completed TaskList = {tasks} DeleteTask={deleteTask}/>
-      </div>
-      <div>
-        <AddTask AddTask={addTask}/>
+    <div className="main">
+      <h1 className="mainTitle">To Do List</h1>
+      <div className="column" id="mainContainer">
+        <div className="row" id="listContainer">
+          <Upcoming TaskList = {tasks} DeleteTask={deleteTask} StartTask={startTask}/>
+          <InProgress TaskList = {tasks} DeleteTask={deleteTask} FinishTask = {finishTask}/>
+          <Completed TaskList = {tasks} DeleteTask={deleteTask}/>
+        </div>
+        <div className="addContainer">
+          <AddTask AddTask={addTask}/>
+        </div>
       </div>
     </div>
   )

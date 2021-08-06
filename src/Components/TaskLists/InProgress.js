@@ -9,7 +9,7 @@ const InProgress = ({TaskList, DeleteTask, FinishTask}) => {
 
 
     return (
-        <div>
+        <div className="taskList">
             <h2>In Progress Tasks</h2>
             
             {inProgressTasks.map(task => (

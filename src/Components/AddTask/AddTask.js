@@ -21,18 +21,19 @@ const AddTask = (props) => {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Task
+        <div className="column">
+            <form onSubmit={handleSubmit}  className="addForm">
+                <label className="addLabel">
+                    <h2>Add Task</h2>
                     <input 
-                        type="text"
+                        type="textarea"
                         name="text"
                         value={task.text}
                         onChange={handleChange}
+                        className="addInput"
                     />
                 </label>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" className="button" id="addSubmit"/>
             </form>
         </div>
   )

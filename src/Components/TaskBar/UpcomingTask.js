@@ -3,17 +3,18 @@ import React from 'react'
 const UpcomingTask = ({Task, DeleteTask, StartTask}) => {
     
     return (
-        <div class="UpcomingTaskBox">
+        <div className="taskBox">
             <p>
                 {Task.text}
-                {Task.id}
             </p>
-            <button onClick={()=>StartTask(Task.id)}>
-                Start
-            </button>
-            <button onClick={()=>DeleteTask(Task.id)}>
-                Delete
-            </button>
+            <div className="buttonContainer">
+                <button onClick={()=>StartTask(Task.id)}>
+                    Start
+                </button>
+                <button onClick={()=>DeleteTask(Task.id)}>
+                    Delete
+                </button>
+            </div>
         </div>
     )
 }

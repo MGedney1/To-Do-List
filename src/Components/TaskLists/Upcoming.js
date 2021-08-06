@@ -9,7 +9,7 @@ const Upcoming = ({TaskList, DeleteTask, StartTask}) => {
 
 
     return (
-        <div>
+        <div className="taskList">
             <h2>Upcoming Tasks</h2>
             
             {upcomingTasks.map((task) => (
