@@ -21,7 +21,7 @@ const AddTask = (props) => {
     }
 
     return (
-        <div className="column">
+        <div className="column" className="addOuter">
             <form onSubmit={handleSubmit}  className="addForm">
                 <label className="addLabel">
                     <h2>Add Task</h2>
